@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Sepakbola</title>
@@ -9,16 +9,15 @@
         <header>
             <div class="jumbotron">
                 <h1>Sepakbola</h1>
-                <p>Olahraga yang paling digemari di seluruh dunia</p>
+                <h3>Olahraga yang paling digemari di seluruh dunia</h3>
             </div>
             <nav>
                 <ul>
                     <li><a href="#sejarah">Sejarah</a></li>
                     <li>
                         <nav class="subnav">
-                        <a href="#peraturan">Peraturan</a>
-
-                            <div class="subnav-content">
+                        <a onclick="dropdownMenu()" class="subnav">Peraturan</a>
+                            <div id="dropdown" class="subnav-content">
                                 <ul>
                                     <li><a href="#lapangan">Lapangan</a></li>
                                     <li><a href="#lama-permainan">Lama Permainan</a></li>
@@ -59,9 +58,9 @@
 
                 <article id="peraturan" class="card">
                     <h2>Peraturan</h2>
-                    <section id="lapangan">
+                    <section id="lapangan" class="card">
                         <h3>Lapangan</h3>
-                        <img src="assets/img/lapangan.jpg" class="featured-image" alt="lapangan">
+                        <img src="assets/img/lapangan.jpg" class="featured-image-field" alt="lapangan">
                         <p>
                             Untuk pertandingan internasional dewasa, lapangan sepak bola internasional yang digunakan memiliki panjang yang berkisar antara 100-120 meter dan lebar 65-75 meter.
                             Di bagian tengah kedua ujung lapangan, terdapat area gawang yang berupa persegi empat berukuran dengan lebar 7.32 meter dan tinggi 2.44 meter.
@@ -69,7 +68,7 @@
                             Area ini merupakan batas kiper boleh menangkap bola dengan tangan dan menentukan kapan sebuah pelanggaran mendapatkan hadiah tendangan penalti atau tidak.
                         </p>
                     </section>
-                    <section id="lama-permainan">
+                    <section id="lama-permainan" class="card">
                         <h3>Lama Permainan</h3>
                         <img src="assets/img/sepakbola.jpg" class="featured-image" alt="sepakbola">
                         <p>
@@ -85,7 +84,7 @@
                             Kedua sistem tersebut tidak lagi digunakan oleh IFAB.
                         </p>
                     </section>
-                    <section id="pelanggaran">
+                    <section id="pelanggaran" class="card">
                         <h3>Pelanggaran</h3>
                         <img src="assets/img/pelanggaran.jpg" class="featured-image" alt="pelanggaran">
                         <p>
@@ -100,9 +99,9 @@
                             Beberapa contoh tindakan yang dapat diganjar kartu merah adalah pelanggaran berat yang membahayakan atau menyebabkan cedera parah pada lawan, meludah, melakukan kekerasan, melanggar lawan yang sedang berusaha mencetak gol, menyentuh bola dengan tangan untuk mencegah gol bagi semua pemain kecuali penjaga gawang, dan menggunakan bahasa atau gerak tubuh yang cenderung menantang, pemain yang berposisi sebagai penjaga gawang melakukan hands ball di luar kotak penalti .
                         </p>
                     </section>
-                    <section id="wasit">
+                    <section id="wasit" class="card">
                         <h3>Wasit dan Petugas Pertandingan</h3>
-                        <img src="assets/img/wasit.jpg" class="featured-image" alt="wasit">
+                        <img src="assets/img/wasit.jpg" class="featured-image-portrait" alt="wasit" align="right">
                         <p>
                             Dalam pertandingan profesional, terdapat 4 petugas yang memimpin jalannya pertandingan, yaitu wasit, 2 hakim garis, dan seorang petugas di pinggir tengah lapangan serta wasit gawang yang berada di pinggir gawang.
                             Wasit memiliki peluit yang menandakan apakah saat berhenti atau memulai memainkan bola.
@@ -141,34 +140,33 @@
                 <article class="profile card">
                     <header>
                         <h2>Profil</h2>
-                        <p>User</p>
                         <figure>
-                            <img src="assets/img/profile.png" alt="profile">
+                            <img src="assets/img/profile.jpg" alt="profile">
                             <figcaption>Profil</figcaption>
                         </figure>
                     </header>
                     <section>
                         <h3>Informasi lainnya</h3>
-                        <table>
+                        <table class="center">
                             <tr>
                                 <th>Nama</th>
-                                <td>User</td>
+                                <td>Achmad Syarief Hidayatullah</td>
                             </tr>
                             <tr>
                                 <th>Tanggal Lahir</th>
-                                <td>1 Januari 1970</td>
+                                <td>5 Februari 1998</td>
                             </tr>
                             <tr>
                                 <th>Alamat</th>
-                                <td>Indonesia</td>
+                                <td>Tenggarong, Kalimantan Timur</td>
                             </tr>
                             <tr>
                                 <th>Email</th>
-                                <td>None</td>
+                                <td>achmad.syarif.hidayatullah@gmail.com</td>
                             </tr>
                             <tr>
                                 <th>Nomor Telp</th>
-                                <td>081234567890</td>
+                                <td>081243264206</td>
                             </tr>
                         </table>
                     </section>
@@ -176,7 +174,8 @@
             </aside>
         </main>
         <footer>
-            <p>Belajar Dasar Pemrograman Web &#169; 2022, Dicoding Academy</p>
+            <p>Copyright &#169; 2022, Achmad Syarief Hidayatullah Amiruddin</p>
         </footer>
+        <script src="assets/js/main.js"></script>
     </body>
 </html>
